@@ -2,8 +2,6 @@ const BACKEND_URL = 'https://raendom-backend.z52da5wt.xyz';
 
 const backendFetch = (path, ...args) => fetch(`${BACKEND_URL}/${path}`, ...args);
 
-export const getCurrency = backendFetch('cache/price');
-
 export const sendTip = async ({ tipId, text, author, signCb, parentId }) => {
     const sendComment = (postParam) => backendFetch('comment/api/', {
       method: 'post',
