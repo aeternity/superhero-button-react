@@ -1,0 +1,30 @@
+{
+  "name": "superhero-button-react",
+  "version": "1.0.0",
+  "description": "react version for the superhero-button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeternity/superhero-button-react.git"
+  },
+  "keywords": [
+    "superhero",
+    "button",
+    "superhero-button",
+    "cryptocurrency",
+    "aeternity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeternity/superhero-button-react/issues"
+  },
+  "homepage": "https://github.com/aeternity/superhero-button-react#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "@aeternity/superhero-button_fork": "git+https://git@github.com/shapkarin/superhero-button.git#master"
+  }
+}
