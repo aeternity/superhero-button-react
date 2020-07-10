@@ -1,5 +1,5 @@
 {
-  "name": "superhero-button-react",
+  "name": "@aeternity/superhero-button-react",
   "version": "1.0.0",
   "description": "react version for the superhero-button",
   "main": "index.js",
@@ -24,7 +24,10 @@
   },
   "homepage": "https://github.com/aeternity/superhero-button-react#readme",
   "dependencies": {
+    "@aeternity/superhero-button": "^0.2.3"
+  },
+  "peerDependencies": {
     "react": "^16.13.1",
-    "@aeternity/superhero-button_fork": "git+https://git@github.com/shapkarin/superhero-button.git#master"
+    "prop-types": "^15.7.2"
   }
 }
