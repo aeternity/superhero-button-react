@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/aeternity/superhero-button-react#readme",
   "dependencies": {
-    "react": "^16.13.1",
     "@aeternity/superhero-button_fork": "git+https://git@github.com/shapkarin/superhero-button.git#master"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
   }
 }
