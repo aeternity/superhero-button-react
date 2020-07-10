@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import createButton from '@aeternity/superhero-button';
 
-import { linkToExtension, genTipDeeplink } from '@aeternity/superhero-button_fork';
+export default class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    this.button = React.createRef();
+    this.componentDidMount = this.componentDidUpdate = () =>
+      createButton(this.button.current, this.props);
+  }
 
-export default ({ text = '', url = window.location.href, account }) => (
-  <a
-    target='_blank'
-    href={ linkToExtension || genTipDeeplink(url) }
-    data-account={account}
-    data-url="${url}"
-  >
-    <img alt='Superhero Icon' src={icon} />
-    {text && <span>{text}</span>}
-  </a>
-);
+  render() {
+    return React.createElement('div', { ref: this.button });
+  }
+};
+
+Button.propTypes = {
+  size: PropTypes.oneOf(['icon', 'small', 'medium', 'large']),
+  url: PropTypes.string,
+  account: PropTypes.string,
+};
