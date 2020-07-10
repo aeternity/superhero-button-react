@@ -1,5 +1,5 @@
 {
-  "name": "superhero-button-react",
+  "name": "@aeternity/superhero-button-react",
   "version": "1.0.0",
   "description": "react version for the superhero-button",
   "main": "index.js",
